@@ -1,10 +1,10 @@
 <?php
 /*
-Plugin Name: Advanced Custom Fields: Image Crop Add-on
-Plugin URI: https://github.com/andersthorborg/ACF-Image-Crop
-Description: An image field making it possible/required for the user to crop the selected image to the specified image size or dimensions
+Plugin Name: Advanced Custom Fields: Image Crop Add-on (Fork)
+Plugin URI: https://github.com/rafecolton/ACF-Image-Crop
+Description: This is a fork of the original ACF-Image-Crop. <strong>DO NOT UPDATE AS NORMAL</strong>
 Version: 1.4.9
-Author: Anders Thorborg
+Author: Anders Thorborg (forked by Himalayan Institute)
 Author URI: http://thorb.org
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html

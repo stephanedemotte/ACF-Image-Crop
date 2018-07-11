@@ -4,7 +4,7 @@ class acf_field_image_crop extends acf_field_image {
 
 
     /*
-    *  __construct
+    *  initialize
     *
     *  This function will setup the field type data
     *
@@ -16,7 +16,7 @@ class acf_field_image_crop extends acf_field_image {
     *  @return  n/a
     */
 
-    function __construct() {
+    function initialize() {
 
         /*
         *  name (string) Single word, no spaces. Underscores allowed
@@ -80,14 +80,7 @@ class acf_field_image_crop extends acf_field_image {
             'size_warning'      => __( 'Warning: The selected image is smaller than the required size!','acf-image_crop' ),
             'crop_error'        => __( 'Sorry, an error occurred when trying to crop your image:')
         );
-
-
-        // do not delete!
-        acf_field::__construct();
-        //parent::__construct();
-
     }
-
 
     // AJAX handler for retieving full image dimensions from ID
     public function crop_get_image_size()
@@ -909,28 +902,13 @@ class acf_field_image_crop extends acf_field_image {
 
     /*
     *  update_value()
-    *
-    *  This filter is applied to the $value before it is saved in the db
-    *
-    *  @type    filter
-    *  @since   3.6
-    *  @date    23/01/13
-    *
-    *  @param   $value (mixed) the value found in the database
-    *  @param   $post_id (mixed) the $post_id from which the value was loaded
-    *  @param   $field (array) the field array holding all the field options
-    *  @return  $value
+    *  Implement this function to avoid parent function taking over and trying to validate json data
     */
-
-    /*
-
     function update_value( $value, $post_id, $field ) {
-
         return $value;
-
     }
 
-    */
+
 
 
     /*
@@ -1149,30 +1127,13 @@ class acf_field_image_crop extends acf_field_image {
     *  @return  $valid
     */
 
-    /*
+
 
     function validate_value( $valid, $value, $field, $input ){
-
-        // Basic usage
-        if( $value < $field['custom_minimum_setting'] )
-        {
-            $valid = false;
-        }
-
-
-        // Advanced usage
-        if( $value < $field['custom_minimum_setting'] )
-        {
-            $valid = __('The value is too little!','acf-image_crop'),
-        }
-
-
-        // return
         return $valid;
-
     }
 
-    */
+
 
 
     /*
@@ -1278,5 +1239,3 @@ class acf_field_image_crop extends acf_field_image {
 
 // create field
 new acf_field_image_crop();
-
-?>

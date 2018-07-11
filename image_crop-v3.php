@@ -348,5 +348,3 @@ class acf_field_image_crop extends acf_Field
 	}
 
 }
-
-?>

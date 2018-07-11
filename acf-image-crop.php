@@ -3,11 +3,8 @@
 Plugin Name: Advanced Custom Fields: Image Crop Add-on (Fork)
 Plugin URI: https://github.com/rafecolton/ACF-Image-Crop
 Description: This is a fork of the original ACF-Image-Crop. <strong>DO NOT UPDATE AS NORMAL</strong>
-Version: 1.4.9
+Version: 1.4.12
 Author: Anders Thorborg (forked by Himalayan Institute)
-Author URI: http://thorb.org
-License: GPLv2 or later
-License URI: http://www.gnu.org/licenses/gpl-2.0.html
 */
 
 
@@ -48,5 +45,3 @@ function acf_image_crop_action_links( $links ) {
 // changed END
    return $links;
 }
-
-?>

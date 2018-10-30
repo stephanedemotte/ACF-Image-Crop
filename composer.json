@@ -1,0 +1,11 @@
+{
+  "name": "stephanedemotte/ACF-Image-Crop",
+  "description": "acf-user-role-field-setting",
+  "type": "wordpress-plugin",
+  "authors": [
+    {
+      "name": "andersthorborg"
+    }
+  ],
+  "minimum-stability": "dev"
+}
